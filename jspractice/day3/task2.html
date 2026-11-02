@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+</head>
+<body>
+    <h1>with parameter,no return value</h1>
+
+
+
+
+
+
+
+
+    //         const array=[]
+//         const arr1 =( prize ,brand)=> {
+//             array.push({prize,brand})
+//           console.log(`${prize}  rupees us polo ${brand} was  delivered`);
+            
+//     }
+//     arr1(600,"shirt")
+
+
+
+//     const generateSessionId=()=> {
+//     return 'sess_' + Math.random().toString(2).substr(2, 8);
+// }
+
+// const currentSession = generateSessionId();
+// console.log(currentSession); 
+
+<!-- 
+const secondLargest = (...numbers) => {
+    let largest = numbers[0];
+    let second = numbers[0];
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] > largest) {
+            second = largest;
+            largest = numbers[i];
+        }
+        else if (numbers[i] > second && numbers[i] < largest) {
+            second = numbers[i];
+        }
+    }
+
+    return second;
+};
+
+console.log(secondLargest(10, 25, 5, 40, 30));
+
+
+
+const secondlargest=(...numbers)=>{
+    let largest=numbers [0]
+    let second=numbers[0] 
+    for(let i=0; i<numbers.length;i++){
+        
+    }
+
+
+}
+    <script> -->
+  const secondlargest(...numbers){
+    let largest=[0]
+    let second=[0]
+    for(let a=0; a<numbers.length; a++){
+        if(numbers[a]>largest)
+        second=largest
+        largest=numbers[a]
+    }
+  }
+
+
+
+    </script>
+    
+</body>
+</html>

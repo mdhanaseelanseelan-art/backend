@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+</head>
+<body>
+    <h1>functions</h1>
+
+    <script>
+        function funname(amnt,rate=60) {
+         return amnt*rate   
+        }
+        console.log(funname(100,));
+
+
+
+
+
+        const calculateTax = function(amount, rate = 60) {
+    return amount * rate;
+};
+console.log(calculateTax(100));
+
+
+const calulateTax = (amount, rate = 60) => amount * rate;
+console.log(calulateTax (100));
+
+        const showWelcomeMessage=()=> {
+    console.log("Welcome to the application!");
+}
+
+showWelcomeMessage();  
+
+    </script>
+    
+</body>
+</html>

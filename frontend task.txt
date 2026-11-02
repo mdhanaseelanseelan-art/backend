@@ -1,0 +1,573 @@
+
+
+HTML, CSS, JAVASCRIPT AND REACT.JS
+
+
+
+1. WHAT IS AN ATTRIBUTE IN HTML?
+
+An HTML attribute provides additional information about an HTML element. Attributes are written inside the opening tag.
+
+Example:
+
+<a href="">Google</a>
+
+Types of HTML Attributes:
+
+1. Global Attributes
+   Ex: id, class, style, title.
+
+2. Element-Specific Attributes
+   Ex: href, src, alt, type.
+
+3. Boolean Attributes
+   Ex: disabled, checked, required, readonly.
+
+Use:
+Attributes provide additional information and control the behaviour of HTML elements.
+
+
+2. WHAT IS CSS LAYOUT? EXPLAIN DIFFERENT CSS LAYOUT METHODS.
+
+CSS Layout is the method of arranging HTML elements on a webpage. It controls the position, size, alignment and spacing of elements.
+
+Different CSS Layout Methods:
+
+1. Normal Flow
+   Default layout method in CSS. Block elements appear one below another.
+
+2. Flexbox
+   Used to arrange elements in rows or columns.
+
+   Example:
+   .container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+3. CSS Grid
+   Used to arrange elements in rows and columns.
+
+   Ex:
+   .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       gap: 10px;
+   }
+
+4. Positioning
+   Used to control the position of elements.
+
+   Types:
+   static, relative, absolute, fixed, sticky.
+
+5. Float
+   Used to move elements to the left or right.
+
+Use:
+CSS layouts help create responsive websites, navigation bars, cards and dashboards.
+
+
+
+
+3. WHAT IS A PROGRAMMING LANGUAGE?
+
+A programming language is a language used to communicate instructions to a computer to perform specific tasks.
+
+Examples:
+1. JavaScript
+2. Python
+3. Java
+4. C
+5. C++
+
+Types:
+
+1. Low-Level Languages
+   Machine language and Assembly language.
+
+2. High-Level Languages
+   JavaScript, Python and Java.
+
+Example:
+
+let a = 10;
+let b = 20;
+
+console.log(a + b);
+
+Output: 30
+
+Use:
+Programming languages are used to develop websites, applications, software and games.
+
+
+4. WHAT IS JAVASCRIPT? EXPLAIN ITS FEATURES.
+
+JavaScript is a high-level programming language used to make websites interactive and dynamic.
+
+Features:
+
+1. Lightweight
+2. Dynamic
+3. Interpreted/JIT compiled
+4. Object-based
+5. Event-driven
+6. Asynchronous
+7. Cross-platform
+8. DOM Manipulation
+
+Example:
+
+<button onclick="showMessage()">Click Me</button>
+
+<script>
+function showMessage() {
+    alert("Welcome to JavaScript!");
+}
+</script>
+
+Use:
+JavaScript is used for form validation, animations, API calls and interactive websites.
+
+
+5. WHAT IS A FUNCTION IN JAVASCRIPT? EXPLAIN ITS TYPES.
+
+A function is a reusable block of code designed to perform a particular task.
+
+Types of Functions:
+
+1. Function Declaration
+
+function greet() {
+    console.log("Hello");
+}
+
+greet();
+
+
+2. Function Expression
+
+const greet = function() {
+    console.log("Hello");
+};
+
+greet();
+
+
+3. Arrow Function
+
+const greet = () => {
+    console.log("Hello");
+};
+
+greet();
+
+
+4. Anonymous Function
+
+setTimeout(function() {
+    console.log("Hello");
+}, 1000);
+
+
+5. Callback Function
+
+function display(callback) {
+    callback();
+}
+
+display(function() {
+    console.log("Welcome")
+
+
+7. Async Function
+
+async function getData() {
+    return "Hello";
+}
+
+Use:
+Functions reduce code repetition and improve code organization.
+
+
+6. WHAT IS THE FETCH API IN JAVASCRIPT? EXPLAIN HOW TO FETCH DATA.
+
+Fetch API is a built-in JavaScript feature used to request data from servers and APIs. It returns a Promise.
+
+Steps:
+
+1. Use fetch() with an API URL.
+2. Receive the server response.
+3. Convert the response into JSON.
+4. Display the data.
+5. Handle errors.
+
+Example:
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.log("Error:", error);
+    });
+
+Explanation:
+
+fetch() - Sends a request to the API.
+response - Receives the server response.
+json() - Converts JSON data into JavaScript values.
+then() - Handles successful Promise results.
+catch() - Handles rejected Promise errors.
+
+Use:
+Fetch API is used to get user details, product information and other data from servers.
+
+
+
+7. WHAT IS REACT.JS? EXPLAIN ITS FEATURES.
+
+React.js is an open-source JavaScript library used to build user interfaces, especially single-page applications.
+
+It was developed by Meta (Facebook).
+
+Features:
+
+1. Component-based architecture.
+2. Virtual DOM.
+3. JSX.
+4. Reusable components.
+5. One-way data flow.
+6. Hooks.
+7. Declarative UI.
+
+Example:
+
+function App() {
+    return (
+        <div>
+            <h1>Hello React</h1>
+            <p>Welcome to React.js</p>
+        </div>
+    );
+}
+
+export default App;
+
+Use:
+React is used to build dashboards, e-commerce websites, social media interfaces and job portals.
+
+
+8. WHAT ARE ES6 AND ES6+ IN JAVASCRIPT?
+
+ES6 stands for ECMAScript 2015. It is a major update to JavaScript introduced in 2015.
+
+ES6+ refers to ES6 and newer JavaScript features introduced in later versions.
+
+Important ES6 Features:
+
+1. let and const
+2. Arrow functions
+3. Template literals
+4. Destructuring
+5. Spread operator
+6. Rest parameters
+7. Classes
+8. Modules
+9. Promises
+10. Default parameters
+
+Ex:
+
+const name = "Dhana";
+
+const greet = () => {
+    console.log(`Hello ${name}`);
+};
+
+greet();
+
+Later ES6+ Features:
+
+1. Optional chaining (?.)
+2. Nullish coalescing (??)
+3. Async/Await
+4. Dynamic import
+
+
+ES6+ makes JavaScript code shorter, cleaner and easier to maintain
+
+9. WHAT IS THE DIFFERENCE BETWEEN NPM AND NPX?
+
+NPM:
+
+NPM stands for Node Package Manager. It is used to install, manage and maintain JavaScript packages.
+
+NPX:
+
+NPX is a package execution tool that comes with modern npm. It allows us to execute package commands.
+
+Differences:
+
+NPM:
+1. Installs packages.
+2. Manages dependencies.
+3. Commonly used with npm install.
+
+NPX:
+1. Executes packages.
+2. Runs package commands.
+3. Can execute locally installed or fetched packages.
+
+NPM Example:
+
+npm install react
+
+NPX Example:
+
+npx create-vite@latest my-app
+
+Use:
+NPM manages packages, whereas NPX executes package commands.
+
+
+10. WHAT ARE BABEL, ESBUILD AND WEBPACK? EXPLAIN BUNDLERS.
+
+1. BABEL
+
+Babel is a JavaScript compiler (transpiler) that converts modern JavaScript and JSX into syntax supported by the target environment.
+
+2. ESBUILD
+
+esbuild is a fast JavaScript bundler and build tool written in Go.
+
+Features:
+1. Fast build process.
+2. JavaScript and TypeScript support.
+3. JSX transformation.
+4. Bundling and minification.
+
+3. WEBPACK
+
+Webpack is a JavaScript module bundler. It combines application files and their dependencies into output bundles.
+
+Features:
+1. Code splitting.
+2. Asset management.
+3. Loaders.
+4. Plugins.
+5. Optimization.
+
+WHAT IS A BUNDLER?
+
+A bundler is a tool that combines multiple application files and their dependencies into optimized output files.
+
+Use:
+Babel transforms code, esbuild provides fast transformation and bundling, and Webpack manages and bundles application dependencies.
+
+
+11. WHAT IS VITE? EXPLAIN ITS USES AND FEATURES.
+
+Vite is a modern frontend build tool used to develop and build web applications quickly. It supports React and Vue.
+
+Features:
+
+1. Fast development server.
+2. Hot Module Replacement (HMR).
+3. Fast production build.
+4. React support.
+5. ES Modules.
+6. CSS support.
+7. Plugin support.
+
+Creating a React Project Using Vite:
+
+Step 1:
+
+npm create vite@latest my-app
+
+Step 2:
+
+cd my-app
+
+Step 3:
+
+npm install
+
+Step 4:
+
+npm run dev
+
+
+Vite is used to create, develop and build modern frontend applications.
+
+
+
+12. WHAT ARE OXC, ROLLUP AND ROLLDOWN?
+
+1. OXC
+
+Oxc stands for Oxidation Compiler. It is a collection of high-performance JavaScript and TypeScript tools written in Rust.
+
+Features:
+1. Code parsing.
+2. JavaScript transformation.
+3. Linting.
+4. Formatting.
+5. Minification.
+
+Use:
+Processes, checks and optimizes JavaScript code.
+
+2. ROLLUP
+
+Rollup is a JavaScript module bundler. It combines different JavaScript files and dependencies into optimized bundles.
+
+Features:
+1. Tree shaking.
+2. Code splitting.
+3. Plugin support.
+4. Optimized output.
+
+Use:
+Bundles JavaScript libraries and applications.
+
+3. ROLLDOWN
+
+Rolldown is a high-performance JavaScript and TypeScript bundler written in Rust.
+
+Features:
+1. Fast bundling.
+2. Written in Rust.
+3. Rollup-compatible plugin API.
+4. Code splitting.
+5. Optimization.
+
+Use:
+Bundles JavaScript applications efficiently, including applications built with Vite.
+
+Main Difference:
+
+Oxc - JavaScript toolchain.
+Rollup - JavaScript module bundler.
+Rolldown - Modern Rust-based bundler.
+
+
+13. WHAT ARE NPM RUN DEV, NPM START AND NPM RUN BUILD?
+
+These commands are used to run scripts defined inside the package.json file.
+
+1. NPM RUN DEV
+
+Starts the development server.
+
+Command:
+
+npm run dev
+
+Purpose:
+1. Runs the project during development.
+2. Allows developers to view changes.
+3. Commonly used with Vite.
+
+2. NPM START
+
+Runs the start script inside package.json.
+
+Command:
+
+npm start
+
+Purpose:
+1. Starts an application.
+2. Can run a development or production server depending on configuration.
+
+3. NPM RUN BUILD
+
+Creates an optimized production version of the application.
+
+Command:
+
+npm run build
+
+Purpose:
+1. Optimizes files.
+2. Minifies code.
+3. Prepares files for deployment.
+4. In Vite, generates a dist folder.
+
+Example package.json:
+
+{
+    "scripts": {
+        "dev": "vite",
+        "start": "vite --host",
+        "build": "vite build"
+    }
+}
+
+
+14. WHAT IS JSX? WHAT IS THE DIFFERENCE BETWEEN JSX AND JAVASCRIPT?
+
+JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows developers to write HTML-like code inside JavaScript.
+
+It is commonly used in React.
+
+Example:
+
+function App() {
+    return (
+        <div>
+            <h1>Hello React</h1>
+            <p>Welcome to React</p>
+        </div>
+    );
+}
+
+Features of JSX:
+
+1. HTML-like syntax.
+2. Easy to read.
+3. Supports JavaScript expressions using {}.
+4. Works with React components.
+5. Transformed into JavaScript before execution.
+
+Difference Between JSX and JavaScript:
+
+JSX:
+1. Syntax extension of JavaScript.
+2. Uses HTML-like syntax.
+3. Commonly used with React.
+4. Must be transformed before browsers can execute it.
+
+JavaScript:
+1. Programming language.
+2. Uses JavaScript syntax.
+3. Used for general programming.
+4. Modern browsers execute supported JavaScript directly.
+
+JavaScript Example:
+
+const element = React.createElement(
+    "h1",
+    null,
+    "Hello World"
+);
+
+JSX Ex:
+
+const element = <h1>Hello World</h1>;
+
+Both create a React element representing an h1 heading.
+
+
+JSX makes it easier to write and understand React user interface code.
+
+
+
+
+
+

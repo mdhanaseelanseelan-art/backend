@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>with parameter ,with return value</h1>
+    <script>
+        const age=(year1,year2)=>{
+            return year1-year2
+        }
+        const finalage=age( 2004,2026)
+      console.log(finalage);
+      
+
+      const createUser = name => ({ name: name, active: true });
+      console.log(createUser(
+    "dhana"
+      ));
+      
+        const total = (...numbers) => {
+
+let sum = 0;
+
+for (let num of numbers) {
+
+sum += num;
+
+}
+
+return sum;
+
+};
+
+console.log(total(10, 20, 30));
+for (let i = 0; i <= 5; i++) {
+
+console.log(i);
+
+}
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+for (let fruit of fruits) {
+
+console.log(fruit);
+}
+    </script>
+    
+</body>
+</html>
