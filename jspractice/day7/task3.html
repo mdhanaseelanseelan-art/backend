@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Document</title>
+</head>
+<body>
+    <h1>Login Validation</h1>
+    <script>
+        let username = "admin";
+   let password = "1234";
+
+    let login = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+
+        if (username === "admin" && password === "1234") {
+            resolve("Login Successful");
+        } else {
+            reject("Invalid Credentials");
+        }
+
+    }, 2000);
+
+     });
+
+    login
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+    </script>
+    
+</body>
+</html>

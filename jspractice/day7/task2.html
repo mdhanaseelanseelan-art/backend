@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Document</title>
+</head>
+<body>
+    <h1>Pass or Fail</h1>
+      <script>
+        let mark = 75;
+
+   let result = new Promise((resolve, reject) => {
+
+    if (mark >= 35) {
+        resolve("Student Passed");
+    } else {
+        reject("Student Failed");
+    }
+
+    });
+
+    result
+    .then((message) => {
+        console.log(message);
+    })
+    .catch((error) => {
+        console.log(error);
+    });    
+      </script>    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Document</title>
+</head>
+<body>
+    <h1>Fetch Single Product</h1>
+    <script>
+        async function getProduct() {
+
+    try {
+
+        let response = await fetch(
+            "https://dummyjson.com/products/1"
+        );
+
+        if (!response.ok) {
+            throw new Error("Product Not Found");
+        }
+
+        let product = await response.json();
+
+        console.log("Product Title:", product.title);
+        console.log("Product Price:", product.price);
+        console.log("Product Category:", product.category);
+
+    } catch (error) {
+
+        console.log("Error:", error.message);
+
+    }
+
+}
+
+getProduct();
+    </script>
+    
+</body>
+</html>
