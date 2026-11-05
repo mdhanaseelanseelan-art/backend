@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Document</title>
+</head>
+<body>
+    <h1>Sort products by price from low to high</h1>
+    <script>
+        let products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 500 },
+    { name: "Keyboard", price: 1000 }
+    ];
+
+     products.sort((a, b) => a.price - b.price);
+
+      console.log(products);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Document</title>
+</head>
+<body>
+    <h1>Get the index of a product by ID using findIndex()</h1>
+    <script>
+        let products = [
+    { id: 101, name: "Laptop" },
+    { id: 102, name: "Mouse" },
+    { id: 103, name: "Keyboard" }
+    ];
+
+     let result = products.findIndex(product => product.id === 103);
+
+      console.log(result);
+    </script>
+    
+</body>
+</html>

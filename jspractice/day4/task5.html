@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+</head>
+<body>
+    <h1>Calculate a shopping cart's total using price  quantity</h1>
+    <script>
+        let cart = [
+    { name: "Laptop", price: 50000, quantity: 1 },
+    { name: "Mouse", price: 500, quantity: 2 },
+    { name: "Keyboard", price: 1000, quantity: 1 }
+    ];
+
+    let total = cart.reduce((sum, item) => {
+    return sum + (item.price * item.quantity);
+     }, 0);
+
+    console.log(total);
+    </script>
+    
+</body>
+</html>
