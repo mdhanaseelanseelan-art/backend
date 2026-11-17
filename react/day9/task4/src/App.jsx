@@ -26,12 +26,9 @@ SetCity(city.map((e,i) =>i==town?" ":e))
 
       {city.map((e,i)=>(
         <h2 key ={i}>{e}</h2>
+        <button onClick={()=>handleDelete(i)}>click to delete</button>
       ))}
-      <button onClick={()=>handleDelete(4)}>click to delete</button>
-
-
-
-    </div>
+      </div>
 
     
     </>
